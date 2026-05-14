@@ -113,7 +113,13 @@ export const AlbumModal = ({ album, onClose }) => {
         </div>
 
         {isFullscreen && (
-            <div className="fullscreen-overlay" onClick={() => setIsFullscreen(false)}>
+            <div 
+                className="fullscreen-overlay" 
+                onClick={() => setIsFullscreen(false)}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+            >
                 <img 
                     src={allImages[currentImageIndex]} 
                     alt="Pantalla completa" 
