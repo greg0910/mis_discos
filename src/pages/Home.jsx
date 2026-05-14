@@ -55,32 +55,6 @@ export const Home = () => {
 
     return (
         <div className="home-container">
-            <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
-                {isSearchOpen && (
-                    <input 
-                        type="text" 
-                        className="search-input" 
-                        placeholder="Buscar banda o álbum..." 
-                        value={searchQuery}
-                        onChange={(e) => {
-                            setSearchQuery(e.target.value);
-                            if (e.target.value.trim() !== "") {
-                                setFilterGenre("all");
-                            }
-                        }}
-                        autoFocus
-                    />
-                )}
-                <button className="search-fab-btn" onClick={() => {
-                    if (isSearchOpen) {
-                        setSearchQuery("");
-                    }
-                    setIsSearchOpen(!isSearchOpen);
-                }}>
-                    {isSearchOpen ? <CloseIcon /> : <SearchIcon />}
-                </button>
-            </div>
-
             <header className="header">
                 <h1 data-text="LA BÓVEDA NEGRA">LA BÓVEDA NEGRA</h1>
                 <p className="subtitle">LA COLECCIÓN CLANDESTINA</p>
@@ -142,6 +116,33 @@ export const Home = () => {
                     ↑
                 </button>
             )}
+
+            <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
+                {isSearchOpen && (
+                    <input 
+                        type="text" 
+                        className="search-input" 
+                        placeholder="Buscar banda o álbum..." 
+                        value={searchQuery}
+                        onChange={(e) => {
+                            setSearchQuery(e.target.value);
+                            if (e.target.value.trim() !== "") {
+                                setFilterGenre("all");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
+                            }
+                        }}
+                        autoFocus
+                    />
+                )}
+                <button className="search-fab-btn" onClick={() => {
+                    if (isSearchOpen) {
+                        setSearchQuery("");
+                    }
+                    setIsSearchOpen(!isSearchOpen);
+                }}>
+                    {isSearchOpen ? <CloseIcon /> : <SearchIcon />}
+                </button>
+            </div>
         </div>
     )
 }
