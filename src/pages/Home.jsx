@@ -100,7 +100,10 @@ export const Home = () => {
                     <AlbumCard 
                         key={album.id} 
                         album={album} 
-                        onClick={() => setSelectedAlbum(album)} 
+                        onClick={() => {
+                            setSelectedAlbum(album);
+                            setIsSearchOpen(false);
+                        }} 
                     />
                 ))}
             </main>
@@ -111,38 +114,40 @@ export const Home = () => {
                 <p>© 2026 Mis Discos. Colección Musical.</p>
             </footer>
 
-            {showScrollTop && (
+            {showScrollTop && !selectedAlbum && (
                 <button className="scroll-top-btn" onClick={scrollToTop}>
                     ↑
                 </button>
             )}
 
-            <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
-                {isSearchOpen && (
-                    <input 
-                        type="text" 
-                        className="search-input" 
-                        placeholder="Buscar banda o álbum..." 
-                        value={searchQuery}
-                        onChange={(e) => {
-                            setSearchQuery(e.target.value);
-                            if (e.target.value.trim() !== "") {
-                                setFilterGenre("all");
-                                window.scrollTo({ top: 0, behavior: "smooth" });
-                            }
-                        }}
-                        autoFocus
-                    />
-                )}
-                <button className="search-fab-btn" onClick={() => {
-                    if (isSearchOpen) {
-                        setSearchQuery("");
-                    }
-                    setIsSearchOpen(!isSearchOpen);
-                }}>
-                    {isSearchOpen ? <CloseIcon /> : <SearchIcon />}
-                </button>
-            </div>
+            {!selectedAlbum && (
+                <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
+                    {isSearchOpen && (
+                        <input 
+                            type="text" 
+                            className="search-input" 
+                            placeholder="Buscar banda o álbum..." 
+                            value={searchQuery}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                if (e.target.value.trim() !== "") {
+                                    setFilterGenre("all");
+                                    window.scrollTo({ top: 0, behavior: "smooth" });
+                                }
+                            }}
+                            autoFocus
+                        />
+                    )}
+                    <button className="search-fab-btn" onClick={() => {
+                        if (isSearchOpen) {
+                            setSearchQuery("");
+                        }
+                        setIsSearchOpen(!isSearchOpen);
+                    }}>
+                        {isSearchOpen ? <CloseIcon /> : <SearchIcon />}
+                    </button>
+                </div>
+            )}
         </div>
     )
 }

@@ -307,96 +307,95 @@
 /* Responsive Modal */
 @media (max-width: 900px) {
   .modal-overlay {
-    padding: 0.5rem;
+    padding: 1rem;
+    align-items: center;
   }
   
   .modal-content {
     flex-direction: column;
-    max-height: 95dvh;
-    overflow-y: hidden; /* Strict NO SCROLL */
+    max-height: 85dvh;
+    height: auto;
     width: 100%;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 0px rgba(0,0,0,1), 10px 10px 0px var(--primary-accent); /* Sombra más pequeña en móvil */
+    border-radius: 0;
+    border: 3px solid var(--card-border);
+    box-shadow: 6px 6px 0px rgba(0,0,0,1), 10px 10px 0px var(--primary-accent);
+    overflow: hidden;
   }
   
   .modal-left {
     flex: 0 0 auto;
-    height: auto;
-    max-height: none;
     border-right: none;
     border-bottom: 2px solid var(--card-border);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar la imagen y miniaturas */
+    align-items: center;
     padding-top: 1rem;
+    width: 100%;
   }
 
   .main-image-container {
-    height: 250px;
-    width: 250px;
-    min-height: 250px;
-    max-height: 250px;
+    width: 220px;
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    flex-shrink: 0; /* Evita que la imagen se deforme o achique */
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
   }
   
   .carousel-btn {
-    display: none; /* Hide buttons on mobile in favor of swipe */
+    display: none;
   }
 
   .thumbnail-gallery {
-    padding: 0.6rem;
-    gap: 0.6rem;
+    padding: 0.8rem;
+    gap: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
   
   .thumbnail-gallery::-webkit-scrollbar {
-    display: block;
-    height: 4px;
-  }
-
-  .thumbnail-gallery::-webkit-scrollbar-thumb {
-    background: var(--primary-accent);
+    display: none;
   }
   
   .thumbnail {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     scroll-snap-align: start;
   }
   
   .modal-right {
-    padding: 0.8rem;
+    padding: 1rem 1.2rem;
     display: flex;
     flex-direction: column;
     flex: 1;
+    overflow: hidden;
   }
 
   .album-genre {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
     padding: 0.2rem 0.6rem;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 
   .modal-right h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.2rem;
     line-height: 1.1;
-    letter-spacing: 0px;
   }
 
   .modal-right h3 {
-    font-size: 0.8rem;
-    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
   }
 
   .album-description {
-    font-size: 0.75rem;
-    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
     line-height: 1.4;
     overflow-y: auto;
     flex: 1;
@@ -412,35 +411,40 @@
   }
 
   .modal-links-container h4 {
-    margin-bottom: 0.4rem;
-    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .album-links {
     flex-direction: row;
-    gap: 0.4rem;
-    flex-wrap: nowrap;
+    gap: 0.6rem;
   }
 
   .btn-link {
     flex: 1;
-    padding: 0.4rem 0.2rem;
-    font-size: 0.55rem;
-    gap: 0.2rem;
+    padding: 0.6rem 0;
+    gap: 0;
+    justify-content: center;
+  }
+  
+  .btn-link span {
+    display: none; /* Oculta el texto y deja solo el logo en móvil */
   }
 
   .btn-link svg {
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
   }
 
   .close-btn {
-    top: 0.4rem;
-    right: 0.4rem;
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
     background: var(--primary-accent);
+    border: 2px solid #fff;
+    border-radius: 0;
     color: #fff;
     box-shadow: 2px 2px 0px #000;
   }

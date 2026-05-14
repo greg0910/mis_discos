@@ -55,7 +55,11 @@ export const AlbumModal = ({ album, onClose }) => {
                         {allImages.length > 1 && (
                             <button className="carousel-btn prev" onClick={prevImage}>❮</button>
                         )}
-                        <img src={allImages[currentImageIndex]} alt={`Imagen de ${album.album}`} className="modal-image" />
+                        <img 
+                            src={allImages[currentImageIndex]} 
+                            alt={`Imagen de ${album.album}`} 
+                            className={`modal-image ${currentImageIndex === 0 ? 'is-cover' : 'is-gallery'}`} 
+                        />
                         {allImages.length > 1 && (
                             <button className="carousel-btn next" onClick={nextImage}>❯</button>
                         )}
