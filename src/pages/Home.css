@@ -422,7 +422,7 @@ body::after {
   }
 
   .search-fab-container.open {
-    bottom: auto;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -432,9 +432,11 @@ body::after {
     backdrop-filter: blur(10px);
     border-bottom: 2px solid var(--primary-accent);
     margin: 0;
+    margin-bottom: 1rem;
     justify-content: space-between;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    transform: none;
+    -webkit-transform: none;
+    z-index: 9999;
   }
 
   .search-fab-btn {
