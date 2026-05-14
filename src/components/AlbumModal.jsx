@@ -11,7 +11,14 @@ export const AlbumModal = ({ album, onClose }) => {
     useEffect(() => {
         if (album) {
             setCurrentImageIndex(0);
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
         }
+
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
     }, [album]);
 
     if (!album) return null;
