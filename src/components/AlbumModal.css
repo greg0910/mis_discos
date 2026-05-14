@@ -307,13 +307,13 @@
 /* Responsive Modal */
 @media (max-width: 900px) {
   .modal-overlay {
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: center;
   }
   
   .modal-content {
     flex-direction: column;
-    max-height: 85dvh;
+    max-height: 96dvh;
     height: auto;
     width: 100%;
     border-radius: 0;
@@ -334,11 +334,11 @@
   }
 
   .main-image-container {
-    width: 220px;
-    height: 220px;
-    min-height: 220px;
-    max-height: 220px;
-    flex-shrink: 0; /* Evita que la imagen se deforme o achique */
+    width: 200px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    flex-shrink: 0;
     background: transparent;
     display: flex;
     justify-content: center;
@@ -350,8 +350,8 @@
   }
 
   .thumbnail-gallery {
-    padding: 0.8rem;
-    gap: 0.8rem;
+    padding: 0.6rem;
+    gap: 0.6rem;
     width: 100%;
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
@@ -363,56 +363,48 @@
   }
   
   .thumbnail {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     scroll-snap-align: start;
   }
   
   .modal-right {
-    padding: 1rem 1.2rem;
+    padding: 0.8rem 1rem;
     display: flex;
     flex-direction: column;
     flex: 1;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .album-genre {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     padding: 0.2rem 0.6rem;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   .modal-right h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 0.2rem;
     line-height: 1.1;
   }
 
   .modal-right h3 {
-    font-size: 0.85rem;
-    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
   }
 
   .album-description {
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    overflow-y: auto;
-    flex: 1;
-    padding-right: 0.5rem;
-  }
-
-  .album-description::-webkit-scrollbar {
-    width: 3px;
-  }
-
-  .album-description::-webkit-scrollbar-thumb {
-    background: var(--primary-accent);
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.35;
+    overflow-y: visible;
+    flex: none;
+    padding-right: 0;
   }
 
   .modal-links-container h4 {
-    margin-bottom: 0.6rem;
-    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .album-links {
