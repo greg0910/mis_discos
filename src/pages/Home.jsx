@@ -117,8 +117,8 @@ export const Home = () => {
                 </button>
             )}
 
-            {isSearchOpen && (
-                <div className="search-top-bar">
+            <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
+                {isSearchOpen && (
                     <input 
                         type="text" 
                         className="search-input" 
@@ -128,26 +128,21 @@ export const Home = () => {
                             setSearchQuery(e.target.value);
                             if (e.target.value.trim() !== "") {
                                 setFilterGenre("all");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
                             }
                         }}
                         autoFocus
                     />
-                    <button className="search-close-top" onClick={() => {
+                )}
+                <button className="search-fab-btn" onClick={() => {
+                    if (isSearchOpen) {
                         setSearchQuery("");
-                        setIsSearchOpen(false);
-                    }}>
-                        <CloseIcon />
-                    </button>
-                </div>
-            )}
-
-            {!isSearchOpen && (
-                <div className="search-fab-container">
-                    <button className="search-fab-btn" onClick={() => setIsSearchOpen(true)}>
-                        <SearchIcon />
-                    </button>
-                </div>
-            )}
+                    }
+                    setIsSearchOpen(!isSearchOpen);
+                }}>
+                    {isSearchOpen ? <CloseIcon /> : <SearchIcon />}
+                </button>
+            </div>
         </div>
     )
 }
