@@ -307,19 +307,21 @@
 /* Responsive Modal */
 @media (max-width: 900px) {
   .modal-overlay {
-    padding: 0.5rem;
+    padding: 1rem;
     align-items: center;
   }
   
   .modal-content {
     flex-direction: column;
-    max-height: 96dvh;
+    max-height: 90dvh;
     height: auto;
     width: 100%;
+    max-width: 450px;
     border-radius: 0;
     border: 3px solid var(--card-border);
     box-shadow: 6px 6px 0px rgba(0,0,0,1), 10px 10px 0px var(--primary-accent);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   
   .modal-left {
@@ -334,10 +336,11 @@
   }
 
   .main-image-container {
-    width: 280px;
-    height: 280px;
-    min-height: 280px;
-    max-height: 280px;
+    width: min(85vw, 320px);
+    height: min(85vw, 320px);
+    min-height: auto;
+    max-height: auto;
+    margin: 0 auto;
     flex-shrink: 0;
     background: transparent;
     display: flex;
