@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { SearchIcon, CloseIcon } from './Icons';
 
 export const SearchFAB = ({ searchQuery, setSearchQuery, setFilterGenre }) => {
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    // Si ya había texto guardado, el buscador debe reaparecer abierto
+    const [isSearchOpen, setIsSearchOpen] = useState(searchQuery.trim() !== "");
 
     return (
         <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
