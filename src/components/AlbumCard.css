@@ -1,0 +1,100 @@
+/* Compact Card */
+.album-card.compact {
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+}
+
+.album-card.compact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.album-card.compact:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px var(--primary-accent);
+  border-color: #333;
+}
+
+.album-card.compact:hover::after {
+  border-color: var(--primary-accent);
+}
+
+.album-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #000; 
+  border-bottom: 2px solid var(--card-border);
+}
+
+.album-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: contrast(1.1) grayscale(20%); /* Gritty look */
+}
+
+.album-card.compact:hover .album-image {
+  transform: scale(1.08);
+  filter: contrast(1.2) grayscale(0%);
+}
+
+.album-info-compact {
+  padding: 1.5rem 1.2rem;
+  text-align: left;
+}
+
+.album-info-compact h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.album-info-compact h3 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.album-year {
+  color: var(--primary-accent);
+  font-weight: 900;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .album-info-compact {
+    padding: 1rem 0.8rem;
+  }
+  
+  .album-info-compact h2 {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .album-info-compact h3 {
+    font-size: 0.75rem;
+  }
+}

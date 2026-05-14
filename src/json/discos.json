@@ -1,0 +1,622 @@
+[
+    {
+        "id": 1,
+        "banda": "No Pressure",
+        "album": "No Pressure",
+        "año": 2020,
+        "genero": "Pop Punk",
+        "portada": "/Discos/1/album_1.jpg",
+        "imagenes": [
+            "/Discos/1/front_1.jpg",
+            "/Discos/1/rear_1.jpg"
+        ],
+        "Descripcion": "Formada por Parker Cannon (The Story So Far), este EP homónimo trajo de vuelta la urgencia y velocidad del pop punk y skate punk de finales de los 90. Destaca por sus riffs agresivos, ritmos de batería vertiginosos y letras sobre frustración y auto-superación, convirtiéndose en un clásico instantáneo en la escena underground.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/0Co02kAkZC42kvdhl75zvy",
+                "Apple Music": "https://music.apple.com/es/album/no-pressure-ep/1622836675",
+                "Tidal": "https://tidal.com/album/227815567"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "banda": "Fiddlehead",
+        "album": "Death is Nothing to Us",
+        "año": 2023,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/2/album_2.jpg",
+        "imagenes": [
+            "/Discos/2/front_2.jpg",
+            "/Discos/2/rear_2.jpg"
+        ],
+        "Descripcion": "Cierra la trilogía conceptual de la banda sobre el luto y la pérdida. Liderada por Pat Flynn, la banda mezcla la catarsis emocional del post-hardcore con ganchos del rock alternativo de los 90. Las letras exploran la aceptación de la muerte envueltas en guitarras densas y una sección rítmica implacable.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/3VAS3XDxovzScTloSDxMo7",
+                "Apple Music": "https://music.apple.com/es/album/death-is-nothing-to-us/1686387946",
+                "Tidal": "https://tidal.com/album/292956667"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "banda": "Neck Deep",
+        "album": "All Distortions Are Intentional",
+        "año": 2020,
+        "genero": "Pop Punk",
+        "portada": "/Discos/3/album_3.jpg",
+        "imagenes": [
+            "/Discos/3/front_3.jpg",
+            "/Discos/3/rear_3.jpg"
+        ],
+        "Descripcion": "Un ambicioso álbum conceptual que se desarrolla en el mundo ficticio de Sonderland. A través de los personajes Jett y Alice, el disco explora temas de desconexión y salud mental, experimentando con texturas más pulidas, influencias del britpop y rock alternativo.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/3fM2J0ilTBGwnzcN3SqUcG",
+                "Apple Music": "https://music.apple.com/es/album/all-distortions-are-intentional/1498663190",
+                "Tidal": "https://tidal.com/album/144659204"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "banda": "No Pressure",
+        "album": "No Pressure (LP)",
+        "año": 2022,
+        "genero": "Pop Punk",
+        "portada": "/Discos/4/album_4.jpg",
+        "imagenes": [
+            "/Discos/4/front_4.jpg",
+            "/Discos/4/rear_4.jpg"
+        ],
+        "Descripcion": "El esperado álbum debut de larga duración consolida el sonido agresivo y rápido de la banda. Con canciones cortas pero contundentes, el disco es una carta de amor al hardcore punk melódico, guitarras veloces y coros coreables perfectos para los mosh pits.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/4IFXisyTbSmbEwzlGX3XzR",
+                "Apple Music": "https://music.apple.com/es/album/no-pressure/1621567530",
+                "Tidal": "https://tidal.com/album/226746169"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "banda": "Turnstile",
+        "album": "Glow On",
+        "año": 2021,
+        "genero": "Hardcore",
+        "portada": "/Discos/5/album_5.jpg",
+        "imagenes": [
+            "/Discos/5/front_5.jpg",
+            "/Discos/5/rear_5.jpg"
+        ],
+        "Descripcion": "Un disco que redefinió los límites del hardcore contemporáneo. Incorpora sintetizadores, percusión latina y texturas de dream pop. Mantiene la energía física del punk pero la fusiona con melodías espaciales y grooves bailables, logrando aclamación masiva.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/2NrYPcMmQBlbBxopc2XlzS",
+                "Apple Music": "https://music.apple.com/es/album/glow-on/1576430192",
+                "Tidal": "https://tidal.com/album/193913258"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "banda": "Basement",
+        "album": "Beside Myself",
+        "año": 2018,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/6/album_6.jpg",
+        "imagenes": [
+            "/Discos/6/front_6.jpg",
+            "/Discos/6/rear_6.jpg"
+        ],
+        "Descripcion": "En su cuarto álbum, la banda perfecciona su fusión de emo, grunge y rock alternativo. Las letras profundizan en la ansiedad y la auto-duda, mientras que la producción impecable resalta guitarras melancólicas y melodías vocales muy maduras.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/6GR8EnywUgDFHmqUHO19RO",
+                "Apple Music": "https://music.apple.com/es/album/beside-myself/1417155666",
+                "Tidal": "https://tidal.com/album/96040749"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "banda": "The Story So Far",
+        "album": "Proper Dose",
+        "año": 2018,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/7/album_7.jpg",
+        "imagenes": [
+            "/Discos/7/front_7.jpg",
+            "/Discos/7/rear_7.jpg"
+        ],
+        "Descripcion": "Un punto de inflexión crucial donde Parker Cannon documenta su recuperación personal. El sonido evoluciona, dejando un poco de lado la agresividad adolescente para abrazar arreglos más ricos, guitarras acústicas y ritmos inspirados en el britpop.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/2go3nVQ6oxBB5UERsGUUz0",
+                "Apple Music": "https://music.apple.com/es/album/proper-dose/1412097802",
+                "Tidal": "https://tidal.com/album/91974887"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "banda": "Koyo",
+        "album": "Would You Miss It?",
+        "año": 2023,
+        "genero": "Pop Punk",
+        "portada": "/Discos/8/album_8.jpg",
+        "imagenes": [
+            "/Discos/8/front_8.jpg",
+            "/Discos/8/rear_8.jpg"
+        ],
+        "Descripcion": "Originarios de Long Island, debutan canalizando la rica historia de su escena local. El disco es una mezcla perfecta de la pesadez del hardcore con coros de pop punk nostálgicos, consolidándose como una inyección de energía fresca en la escena.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/15At5fBHrNsaLtWA7dNWIA",
+                "Apple Music": "https://music.apple.com/es/album/would-you-miss-it/1685744995",
+                "Tidal": "https://tidal.com/album/292377674"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "banda": "Turnover",
+        "album": "Peripheral Vision",
+        "año": 2015,
+        "genero": "Indie Rock",
+        "portada": "/Discos/9/album_9.jpg",
+        "imagenes": [
+            "/Discos/9/front_9.jpg",
+            "/Discos/9/rear_9.jpg"
+        ],
+        "Descripcion": "Un álbum transformativo que dejó atrás las raíces pop punk para abrazar completamente el dream pop y el indie rock. Caracterizado por guitarras bañadas en chorus y ritmos suaves, es considerada una obra maestra moderna del shoegaze ligero.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/5On8s1irA6JETiDvt2VUy7",
+                "Apple Music": "https://music.apple.com/es/album/peripheral-vision/1493926962",
+                "Tidal": "https://tidal.com/album/126102444"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "banda": "Arcade Fire",
+        "album": "Everything Now",
+        "año": 2017,
+        "genero": "Indie Rock",
+        "portada": "/Discos/10/album_10.jpg",
+        "imagenes": [
+            "/Discos/10/front_10.jpg",
+            "/Discos/10/rear_10.jpg"
+        ],
+        "Descripcion": "Un disco que critica la saturación de información y el consumismo. Producido con Thomas Bangalter de Daft Punk, el álbum abraza ritmos de música disco, funk y synth-pop, combinados con los grandiosos arreglos orquestales característicos de la banda.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/1DNojVW079FU9YnAMk3Cgr",
+                "Apple Music": "https://music.apple.com/es/album/everything-now/1240796998",
+                "Tidal": "https://tidal.com/album/76324167"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "banda": "Movements",
+        "album": "Feel Something",
+        "año": 2017,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/11/album_11.jpg",
+        "imagenes": [
+            "/Discos/11/front_11.jpg",
+            "/Discos/11/rear_11.jpg"
+        ],
+        "Descripcion": "Un pilar del emo moderno. El vocalista Patrick Miranda explora temas crudos de depresión a través de su distintivo estilo que mezcla canto melódico con 'spoken word' desgarrador, respaldado por pasajes de guitarras atmosféricas y crescendos explosivos.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/4baVGjGtGhgpb0oEqjSkLi",
+                "Apple Music": "https://music.apple.com/es/album/feel-something/1440946073",
+                "Tidal": "https://tidal.com/album/79847747"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "banda": "Basement",
+        "album": "Colourmeinkindness",
+        "año": 2012,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/12/album_12.jpg",
+        "imagenes": [
+            "/Discos/12/front_12.jpg",
+            "/Discos/12/rear_12.jpg"
+        ],
+        "Descripcion": "Grabado justo antes de una pausa temporal, este álbum definió el sonido emo y alt-rock de la década. Con fuerte influencia del grunge de los 90, presenta guitarras pesadas, voces rasgadas y temas que se convirtieron en himnos generacionales.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/5uRI7KHcBALPpwhAB9RKnb",
+                "Apple Music": "https://music.apple.com/es/album/colourmeinkindness/1492600404",
+                "Tidal": "https://tidal.com/album/125975838"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "banda": "Movements",
+        "album": "Ruckus!",
+        "año": 2023,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/13/album_13.jpg",
+        "imagenes": [
+            "/Discos/13/front_13.jpg",
+            "/Discos/13/rear_13.jpg"
+        ],
+        "Descripcion": "Una audaz evolución sonora donde la banda incorpora influencias del rock alternativo de los 2000 y elementos experimentales. Dejando atrás parte de la oscuridad anterior, este álbum es más dinámico, juguetón y vocalmente diverso.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/3UO7dRJBreXDCBlqfCWBPo",
+                "Apple Music": "https://music.apple.com/es/album/ruckus/1684846005",
+                "Tidal": "https://tidal.com/album/310282893"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "banda": "Trapped Under Ice",
+        "album": "Big Kiss Goodnight",
+        "año": 2011,
+        "genero": "Hardcore",
+        "portada": "/Discos/14/album_14.jpg",
+        "imagenes": [
+            "/Discos/14/front_14.jpg",
+            "/Discos/14/rear_14.jpg"
+        ],
+        "Descripcion": "Un clásico moderno del hardcore beatdown de Baltimore. Repleto de riffs aplastantes, breakdowns para el mosh y una agresión callejera inconfundible. Las vocales de Justice Tripp combinan dureza con un ritmo hiphopero influyente.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/58FEHERIbXVhRIIf8jXZUm",
+                "Apple Music": "https://music.apple.com/es/album/big-kiss-goodnight/1695176288",
+                "Tidal": "https://tidal.com/album/302646846"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "banda": "Turnstile",
+        "album": "Never Enough",
+        "año": 2013,
+        "genero": "Hardcore",
+        "portada": "/Discos/15/album_15.jpg",
+        "imagenes": [
+            "/Discos/15/front_15.jpg",
+            "/Discos/15/rear_15.jpg"
+        ],
+        "Descripcion": "Este EP temprano cimentó las bases del sonido 'groove hardcore'. Aunque es crudo y directo, mostraba destellos de su creatividad rítmica y su disposición a incorporar melodías poco convencionales, siendo una muestra de pura energía bailable.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/52yD51X7yDinwlg6tbCtpP",
+                "Apple Music": "https://music.apple.com/es/album/never-enough/1805820903",
+                "Tidal": "https://tidal.com/album/440155726"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "banda": "Basement",
+        "album": "I Wish I Could Stay Here",
+        "año": 2011,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/16/album_16.jpg",
+        "imagenes": [
+            "/Discos/16/front_16.jpg",
+            "/Discos/16/rear_16.jpg"
+        ],
+        "Descripcion": "El álbum debut que puso a la banda británica en el radar internacional. Combina la agresividad del punk rock con sensibilidades melódicas del midwest emo, resultando en un disco áspero sobre la alienación y la transición a la adultez.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/50q9wsn54FNDpVV7S7idOG",
+                "Apple Music": "https://music.apple.com/es/album/i-wish-i-could-stay-here/1491839254",
+                "Tidal": "https://tidal.com/album/125698946"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "banda": "Title Fight",
+        "album": "Floral Green",
+        "año": 2012,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/17/album_17.jpg",
+        "imagenes": [
+            "/Discos/17/front_17.jpg",
+            "/Discos/17/rear_17.jpg"
+        ],
+        "Descripcion": "Obra fundamental que actúa como puente entre el punk melódico de sus inicios y el shoegaze espacial. Tiene un tono oscuro y otoñal, con guitarras difusas, ritmos disonantes y letras crípticas que cambiaron la trayectoria del género.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/1sZsY3CrPE6z1xlOKzQs2X",
+                "Apple Music": "https://music.apple.com/es/album/floral-green/1880759521",
+                "Tidal": "https://tidal.com/album/502800696"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "banda": "Turnstile",
+        "album": "Nonstop Feeling",
+        "año": 2015,
+        "genero": "Hardcore",
+        "portada": "/Discos/18/album_18.jpg",
+        "imagenes": [
+            "/Discos/18/front_18.jpg",
+            "/Discos/18/rear_18.jpg"
+        ],
+        "Descripcion": "El primer LP de la banda capturó su caótica energía en vivo. Con influencia del hardcore neoyorquino de los 90 mezclada con ritmos alternativos, el disco rebosa actitud, riffs saltarines y un groove que invita al movimiento constante.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/6BFCtPdoT07blVSsAkHUw6",
+                "Apple Music": "https://music.apple.com/es/album/nonstop-feeling/1094497174",
+                "Tidal": "https://tidal.com/album/58451991"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "banda": "Turnstile",
+        "album": "Time & Space",
+        "año": 2018,
+        "genero": "Hardcore",
+        "portada": "/Discos/19/album_19.jpg",
+        "imagenes": [
+            "/Discos/19/front_19.jpg",
+            "/Discos/19/rear_19.jpg"
+        ],
+        "Descripcion": "Un punto de inflexión donde expandieron dramáticamente sus horizontes sonoros. El disco introduce percusiones adicionales, intermedios ambientales e influencias de R&B dentro de la estructura visceral del hardcore, preparando su explosión comercial.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/7bZveW9UQfYbkPH9pkpaQx",
+                "Apple Music": "https://music.apple.com/es/album/time-space/1332022638",
+                "Tidal": "https://tidal.com/album/84695211"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "banda": "The Story So Far",
+        "album": "I Want To Disappear",
+        "año": 2024,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/20/album_20.jpg",
+        "imagenes": [
+            "/Discos/20/front_20.jpg",
+            "/Discos/20/rear_20.jpg"
+        ],
+        "Descripcion": "El esperado regreso que equilibra magistralmente la agresividad cruda de sus primeros días con una sensibilidad pulida. Las letras abordan el luto y la búsqueda de paz interior, respaldadas por una instrumentación impecablemente ajustada.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/2OySS7ChLOHd5jiitJON5j",
+                "Apple Music": "https://music.apple.com/es/album/i-want-to-disappear-in-the-usa/1830988985",
+                "Tidal": "https://tidal.com/album/452067351"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "banda": "Movements",
+        "album": "Outgrown Things",
+        "año": 2016,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/21/album_21.jpg",
+        "imagenes": [
+            "/Discos/21/front_21.jpg",
+            "/Discos/21/rear_21.jpg"
+        ],
+        "Descripcion": "El EP introductorio que cautivó a la escena. Se caracteriza por líneas de guitarra complejas y la introducción del estilo único de alternar poesía hablada con gritos catárticos para tratar temas de alienación y crecimiento personal.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/7rVzuWEA2QyRBZiaepThCO",
+                "Apple Music": "https://music.apple.com/es/album/outgrown-things-ep/1440917233",
+                "Tidal": "https://tidal.com/album/57832400"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "banda": "Luis7Lunes",
+        "album": "Audio Descriptivo",
+        "año": 2020,
+        "genero": "Hip Hop",
+        "portada": "/Discos/22/album_22.jpg",
+        "imagenes": [
+            "/Discos/22/front_22.jpg",
+            "/Discos/22/rear_22.jpg"
+        ],
+        "Descripcion": "Un trabajo impecable del hip hop underground colombiano. Luis7Lunes destaca por sus rimas estructuradas y observación social, apoyándose en beats de boom-bap, samples de jazz y soul para crear un ambiente maduro y cinematográfico.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/3vyY3AEZBxb4XwvLCWeeMy",
+                "Apple Music": "https://music.apple.com/es/album/audio-descriptivo/1542655896",
+                "Tidal": "https://tidal.com/album/166071720"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "banda": "Have Heart",
+        "album": "Songs To Scream At The Sun",
+        "año": 2008,
+        "genero": "Hardcore",
+        "portada": "/Discos/23/album_23.jpg",
+        "imagenes": [
+            "/Discos/23/front_23.jpg",
+            "/Discos/23/rear_23.jpg"
+        ],
+        "Descripcion": "Considerado uno de los discos más importantes del hardcore del siglo XXI. Es una obra poética y emocional que trata sobre el dolor familiar y la depresión. La intensidad vocal y guitarras disonantes crean una experiencia devastadora.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/4X481BCoxdzmKYaxzwBQZW",
+                "Apple Music": "https://music.apple.com/es/album/songs-to-scream-at-the-sun/283414947",
+                "Tidal": "https://tidal.com/album/390630392"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "banda": "Luis7Lunes",
+        "album": "Ruidos en Hamelin",
+        "año": 2015,
+        "genero": "Hip Hop",
+        "portada": "/Discos/24/album_24.jpg",
+        "imagenes": [
+            "/Discos/24/front_24.jpg",
+            "/Discos/24/rear_24.jpg"
+        ],
+        "Descripcion": "El álbum que solidificó el estatus de culto del artista. A través de metáforas literarias, es un análisis crítico del entorno social colombiano. La producción oscura y minimalista complementa a la perfección su estilo lírico directo.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/0AoVXbfCGcwvyRP5M3rK3k",
+                "Apple Music": "https://music.apple.com/es/album/ruidos-en-hamelin/1401064485",
+                "Tidal": "https://tidal.com/album/90679999"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "banda": "Bane",
+        "album": "Don't Wait Up",
+        "año": 2014,
+        "genero": "Hardcore",
+        "portada": "/Discos/25/album_25.jpg",
+        "imagenes": [
+            "/Discos/25/front_25.jpg",
+            "/Discos/25/rear_25.jpg"
+        ],
+        "Descripcion": "El canto de cisne de la banda. Conscientes de que sería su último disco, entregaron canciones sobre el envejecimiento en la escena punk, la camaradería y el legado. Es un cierre emocional, nostálgico y furioso que honra su carrera.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/15oN3N4PuHQ16QaZRW8o4r",
+                "Apple Music": "https://music.apple.com/es/album/dont-wait-up/1495081472",
+                "Tidal": "https://tidal.com/album/27443019"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "banda": "Neck Deep",
+        "album": "Neck Deep",
+        "año": 2024,
+        "genero": "Pop Punk",
+        "portada": "/Discos/26/album_26.jpg",
+        "imagenes": [
+            "/Discos/26/front_26.jpg",
+            "/Discos/26/rear_26.jpg"
+        ],
+        "Descripcion": "Un regreso consciente a sus raíces de pop punk clásico, dejando atrás la experimentación pasada. El disco rebosa himnos optimistas, quejas sobre la política moderna y coros masivos, demostrando por qué lideran el género actual.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/5dJ7QsXRqsX5oErJatoERd",
+                "Apple Music": "https://music.apple.com/es/album/neck-deep/1709572991",
+                "Tidal": "https://tidal.com/album/318998003"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "banda": "Unidad Ideológica",
+        "album": "Choque Asimetrico",
+        "año": 2025,
+        "genero": "Punk",
+        "portada": "/Discos/27/album_27.jpg",
+        "imagenes": [
+            "/Discos/27/front_27.jpg",
+            "/Discos/27/rear_27.jpg"
+        ],
+        "Descripcion": "Un estallido visceral de punk desde Bogotá. El disco refleja la agitación social, la resistencia y el descontento a través de guitarras ultra distorsionadas y baterías veloces, documentando la realidad latinoamericana.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/3VuX4eZHAR1vz0qz6UZebI",
+                "Apple Music": "https://music.apple.com/es/album/choque-asimétrico/1856053247",
+                "Tidal": "https://tidal.com/album/476636151"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "banda": "Citizen",
+        "album": "Life In Your Glass World",
+        "año": 2021,
+        "genero": "Post Hardcore",
+        "portada": "/Discos/28/album_28.jpg",
+        "imagenes": [
+            "/Discos/28/front_28.jpg",
+            "/Discos/28/rear_28.jpg"
+        ],
+        "Descripcion": "Marca un alejamiento del grunge melancólico para incorporar post-punk, dance-punk y new wave. Con líneas de bajo prominentes y ritmos bailables, las letras abordan el control, la toxicidad y la liberación personal.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/07Pv7j17v7JX1NEbZidg84",
+                "Apple Music": "https://music.apple.com/es/album/life-in-your-glass-world/1513264547",
+                "Tidal": "https://tidal.com/album/141607506"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "banda": "Have Heart",
+        "album": "The Things We Carry",
+        "año": 2006,
+        "genero": "Hardcore",
+        "portada": "/Discos/29/album_29.jpg",
+        "imagenes": [
+            "/Discos/29/front_29.jpg",
+            "/Discos/29/rear_29.jpg"
+        ],
+        "Descripcion": "El disco debut que definió la filosofía 'straight edge' moderna. Con himnos sobre la perseverancia y el respeto propio, inyectaron un mensaje profundamente positivo apoyado por riffs de guitarra inspiradores y coros masivos.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/4sUONwbS1cQQhqwxzwZbtA",
+                "Apple Music": "https://music.apple.com/es/album/the-things-we-carry/276633927",
+                "Tidal": "https://tidal.com/album/5566826"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "banda": "Rotting Out",
+        "album": "Ronin",
+        "año": 2020,
+        "genero": "Hardcore",
+        "portada": "/Discos/30/album_30.jpg",
+        "imagenes": [
+            "/Discos/30/front_30.jpg",
+            "/Discos/30/rear_30.jpg"
+        ],
+        "Descripcion": "Un disco nacido de la adversidad, la cárcel y la redención de su vocalista. El sonido es un hardcore rápido, influenciado por el thrash, con letras brutalmente honestas sobre la supervivencia en la calle y el perdón.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/6gJf25L0pk8Yi4F61DBhLk",
+                "Apple Music": "https://music.apple.com/es/album/ronin/1799143205",
+                "Tidal": "https://tidal.com/album/423191642"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "banda": "Angel Du$t",
+        "album": "Cold 2 The Touch",
+        "año": 2026,
+        "genero": "Hardcore",
+        "portada": "/Discos/31/album_31.jpg",
+        "imagenes": [
+            "/Discos/31/front_31.jpg",
+            "/Discos/31/rear_31.jpg"
+        ],
+        "Descripcion": "El primer lanzamiento que mostró el talento de la banda para escribir canciones punk pegadizas bajo una óptica de rock de garaje. La mezcla de voces poperas con instrumentación enérgica sentó las bases para su estilo único.",
+        "link": [
+            {
+                "Spotify": "https://open.spotify.com/intl-es/album/2FPvnCC5H66sUAnNSgQ7hK",
+                "Apple Music": "https://music.apple.com/es/album/cold-2-the-touch/1842916571",
+                "Tidal": "https://tidal.com/album/463715057"
+            }
+        ]
+    }
+]
