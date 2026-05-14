@@ -128,6 +128,7 @@ export const Home = () => {
                             setSearchQuery(e.target.value);
                             if (e.target.value.trim() !== "") {
                                 setFilterGenre("all");
+                                window.scrollTo({ top: 0, behavior: "smooth" });
                             }
                         }}
                         autoFocus
@@ -136,6 +137,8 @@ export const Home = () => {
                 <button className="search-fab-btn" onClick={() => {
                     if (isSearchOpen) {
                         setSearchQuery("");
+                    } else {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
                     }
                     setIsSearchOpen(!isSearchOpen);
                 }}>
