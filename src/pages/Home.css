@@ -353,7 +353,52 @@ body::after {
   }
 }
 
-/* Search FAB */
+/* Search Components */
+.search-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: calc(1rem + env(safe-area-inset-top, 0px)) 1rem 1rem 1rem;
+  background: rgba(5, 5, 5, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--primary-accent);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+.search-close-top {
+  background: var(--primary-accent);
+  color: #fff;
+  border: 2px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.8);
+  flex-shrink: 0;
+}
+
+.search-close-top:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
 .search-fab-container {
   position: fixed;
   bottom: 2rem;
@@ -361,7 +406,6 @@ body::after {
   display: flex;
   align-items: center;
   z-index: 1000;
-  gap: 1rem;
 }
 
 .search-fab-btn {
@@ -414,6 +458,12 @@ body::after {
   .search-fab-container {
     bottom: 1rem;
     left: 1rem;
+    top: auto;
+    right: auto;
+  }
+
+  .search-top-bar {
+    padding: calc(1rem + env(safe-area-inset-top, 20px)) 1rem 1rem 1rem;
   }
 
   .search-fab-btn {
@@ -424,7 +474,8 @@ body::after {
   }
 
   .search-input {
-    width: calc(100vw - 100px); /* Ajustar al ancho del celular dejando espacio para el botón */
+    flex: 1;
+    width: auto;
     padding: 0.8rem 1rem;
     font-size: 16px; /* 16px prevents iOS from automatically zooming! */
   }

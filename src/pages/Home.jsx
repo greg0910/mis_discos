@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import datos from "../json/discos.json"
 import { AlbumCard } from "../components/AlbumCard"
 import { AlbumModal } from "../components/AlbumModal"
-import { SearchIcon } from "../components/Icons"
+import { SearchIcon, CloseIcon } from "../components/Icons"
 import "./Home.css"
 
 export const Home = () => {
@@ -117,8 +117,8 @@ export const Home = () => {
                 </button>
             )}
 
-            <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
-                {isSearchOpen && (
+            {isSearchOpen && (
+                <div className="search-top-bar">
                     <input 
                         type="text" 
                         className="search-input" 
@@ -128,21 +128,26 @@ export const Home = () => {
                             setSearchQuery(e.target.value);
                             if (e.target.value.trim() !== "") {
                                 setFilterGenre("all");
-                                window.scrollTo({ top: 0, behavior: "smooth" });
                             }
                         }}
                         autoFocus
                     />
-                )}
-                <button className="search-fab-btn" onClick={() => {
-                    if (isSearchOpen) {
+                    <button className="search-close-top" onClick={() => {
                         setSearchQuery("");
-                    }
-                    setIsSearchOpen(!isSearchOpen);
-                }}>
-                    {isSearchOpen ? '✕' : <SearchIcon />}
-                </button>
-            </div>
+                        setIsSearchOpen(false);
+                    }}>
+                        <CloseIcon />
+                    </button>
+                </div>
+            )}
+
+            {!isSearchOpen && (
+                <div className="search-fab-container">
+                    <button className="search-fab-btn" onClick={() => setIsSearchOpen(true)}>
+                        <SearchIcon />
+                    </button>
+                </div>
+            )}
         </div>
     )
 }
