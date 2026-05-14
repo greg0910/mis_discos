@@ -114,7 +114,6 @@ export const AlbumModal = ({ album, onClose }) => {
 
         {isFullscreen && (
             <div className="fullscreen-overlay" onClick={() => setIsFullscreen(false)}>
-                <button className="close-btn close-fullscreen" onClick={() => setIsFullscreen(false)}>✕</button>
                 <img 
                     src={allImages[currentImageIndex]} 
                     alt="Pantalla completa" 
