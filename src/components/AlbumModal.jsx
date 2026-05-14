@@ -4,6 +4,7 @@ import "./AlbumModal.css"
 
 export const AlbumModal = ({ album, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isFullscreen, setIsFullscreen] = useState(false);
     const [touchStart, setTouchStart] = useState(null);
     const [touchEnd, setTouchEnd] = useState(null);
 
@@ -42,6 +43,7 @@ export const AlbumModal = ({ album, onClose }) => {
     };
 
     return (
+        <>
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="close-btn" onClick={onClose}>✕</button>
@@ -59,6 +61,8 @@ export const AlbumModal = ({ album, onClose }) => {
                             src={allImages[currentImageIndex]} 
                             alt={`Imagen de ${album.album}`} 
                             className={`modal-image ${currentImageIndex === 0 ? 'is-cover' : 'is-gallery'}`} 
+                            onClick={() => setIsFullscreen(true)}
+                            style={{ cursor: 'zoom-in' }}
                         />
                         {allImages.length > 1 && (
                             <button className="carousel-btn next" onClick={nextImage}>❯</button>
@@ -107,5 +111,18 @@ export const AlbumModal = ({ album, onClose }) => {
                 </div>
             </div>
         </div>
+
+        {isFullscreen && (
+            <div className="fullscreen-overlay" onClick={() => setIsFullscreen(false)}>
+                <button className="close-btn close-fullscreen" onClick={() => setIsFullscreen(false)}>✕</button>
+                <img 
+                    src={allImages[currentImageIndex]} 
+                    alt="Pantalla completa" 
+                    className="fullscreen-image" 
+                    onClick={(e) => e.stopPropagation()} 
+                />
+            </div>
+        )}
+        </>
     )
 }
