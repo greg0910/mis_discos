@@ -137,8 +137,6 @@ export const Home = () => {
                 <button className="search-fab-btn" onClick={() => {
                     if (isSearchOpen) {
                         setSearchQuery("");
-                    } else {
-                        window.scrollTo({ top: 0, behavior: "smooth" });
                     }
                     setIsSearchOpen(!isSearchOpen);
                 }}>

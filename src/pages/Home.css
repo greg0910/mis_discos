@@ -415,19 +415,6 @@ body::after {
     bottom: 1rem;
     left: 1rem;
   }
-  
-  .search-fab-container.open {
-    bottom: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: calc(1rem + env(safe-area-inset-top, 20px)) 1rem 1rem 1rem;
-    background: rgba(5, 5, 5, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid var(--primary-accent);
-    margin: 0;
-  }
 
   .search-fab-btn {
     width: 50px;
@@ -437,7 +424,7 @@ body::after {
   }
 
   .search-input {
-    width: 100%;
+    width: calc(100vw - 100px); /* Ajustar al ancho del celular dejando espacio para el botón */
     padding: 0.8rem 1rem;
     font-size: 16px; /* 16px prevents iOS from automatically zooming! */
   }
