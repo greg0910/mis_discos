@@ -2,24 +2,36 @@ import { useEffect, useState } from "react"
 import datos from "../json/discos.json"
 import { AlbumCard } from "../components/AlbumCard"
 import { AlbumModal } from "../components/AlbumModal"
+import { SearchIcon } from "../components/Icons"
 import "./Home.css"
 
 export const Home = () => {
 
     const [albums, setAlbums] = useState(datos)
     const [filterGenre, setFilterGenre] = useState("all")
+    const [searchQuery, setSearchQuery] = useState("")
+    const [isSearchOpen, setIsSearchOpen] = useState(false)
     const [selectedAlbum, setSelectedAlbum] = useState(null)
     const [showScrollTop, setShowScrollTop] = useState(false)
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     useEffect(() => {
-        if(filterGenre === "all"){
-            setAlbums(datos)
-        }else{
-            const filteredAlbums = datos.filter(album => album.genero === filterGenre)
-            setAlbums(filteredAlbums)
+        let filteredAlbums = datos;
+        
+        if (filterGenre !== "all") {
+            filteredAlbums = filteredAlbums.filter(album => album.genero === filterGenre);
         }
-    }, [filterGenre])
+
+        if (searchQuery.trim() !== "") {
+            const lowerQuery = searchQuery.toLowerCase();
+            filteredAlbums = filteredAlbums.filter(album => 
+                album.album.toLowerCase().includes(lowerQuery) || 
+                album.banda.toLowerCase().includes(lowerQuery)
+            );
+        }
+
+        setAlbums(filteredAlbums);
+    }, [filterGenre, searchQuery])
 
     useEffect(() => {
         const handleScroll = () => {
@@ -104,6 +116,32 @@ export const Home = () => {
                     ↑
                 </button>
             )}
+
+            <div className={`search-fab-container ${isSearchOpen ? 'open' : ''}`}>
+                {isSearchOpen && (
+                    <input 
+                        type="text" 
+                        className="search-input" 
+                        placeholder="Buscar banda o álbum..." 
+                        value={searchQuery}
+                        onChange={(e) => {
+                            setSearchQuery(e.target.value);
+                            if (e.target.value.trim() !== "") {
+                                setFilterGenre("all");
+                            }
+                        }}
+                        autoFocus
+                    />
+                )}
+                <button className="search-fab-btn" onClick={() => {
+                    if (isSearchOpen) {
+                        setSearchQuery("");
+                    }
+                    setIsSearchOpen(!isSearchOpen);
+                }}>
+                    {isSearchOpen ? '✕' : <SearchIcon />}
+                </button>
+            </div>
         </div>
     )
 }
